@@ -17,3 +17,4 @@ Die Projekte und Aufgaben in diesem Repository sollen dazu dienen, praktische Er
 ---
 
 **Hinweis:** Dieses Repository wurde im Rahmen des WEB1-Kurses an der HF Schule erstellt und dient zur Erfüllung der Kursanforderungen.
+
