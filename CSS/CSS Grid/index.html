@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      .grid-container {
-        display: grid;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="grid-container">
-      <div>Item 1</div>
-      <div>Item 2</div>
-      <div>Item 3</div>
-    </div>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/submit" method="post"></form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Senden</button>
+    <input type="text"> <!-- Textfeld -->
+    <input type="password"> <!-- Passwortfeld -->
+    <input type="checkbox"> <!-- Checkbox -->
+</form>
+<select name="fruits">
+  <option value="apple">Apfel</option>
+  <option value="banana">Banane</option>
+  <option value="cherry">Kirsche</option>
+</select>
+
+<textarea rows="4" cols="50">
+  Hier Ihren Text eingeben...
+</textarea>
+</body>
 </html>
