@@ -1,48 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Figma Basics Wireframe</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Über uns</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
-    <!-- Main Section -->
-    <main>
-        <div class="content">
-            <img src="https://via.placeholder.com/600x300" alt="Placeholder Image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-        </div>
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
 
-        <!-- Sidebar -->
-        <aside>
-            <h3>Links</h3>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-        </aside>
-    </main>
+header nav ul {
+    list-style-type: none;
+}
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Dein Unternehmen. Alle Rechte vorbehalten.</p>
-        <p>Kontakt: info@deinunternehmen.com</p>
-    </footer>
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-</body>
-</html>
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
