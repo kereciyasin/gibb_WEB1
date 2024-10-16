@@ -13,13 +13,17 @@ body {
     align-items: center;
 }
 
+/* Container styles */
 .login-container {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
+/* Form styles */
 .login-form {
     display: flex;
     flex-direction: column;
@@ -37,6 +41,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    width: 100%;
 }
 
 .login-form button {
@@ -47,6 +52,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%;
 }
 
 .login-form button:hover {
@@ -56,10 +62,10 @@ body {
 /* Responsive Design */
 @media (max-width: 600px) {
     .login-container {
-        width: 90%;
+        width: 90%; /* Adjusts the container width for small screens */
     }
 
     .login-form input, .login-form button {
-        font-size: 14px;
+        font-size: 14px; /* Smaller font size for inputs and buttons */
     }
 }
