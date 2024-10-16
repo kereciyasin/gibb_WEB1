@@ -14,14 +14,18 @@ body {
 header {
     background-color: #48a999;
     padding: 1rem;
-    text-align: center;
+    text-align: center; /* Metni ortala */
     color: white;
-    margin-top: 10px;
     position: relative;
 }
 
-header .menu-toggle {
-    display: none;
+/* Hamburger Menu */
+.menu-toggle {
+    display: none; /* Hamburger menüsü için checkbox gizli */
+}
+
+.menu-icon {
+    display: none; /* Hamburger simgesi başlangıçta gizli */
     background: none;
     border: none;
     color: white;
@@ -32,8 +36,11 @@ header .menu-toggle {
     cursor: pointer;
 }
 
+/* Navbar bağlantı stilleri */
 header nav {
     margin-top: 1rem;
+    display: flex; /* Navbar öğelerini yan yana diz */
+    justify-content: center; /* Navbar'ı ortala */
 }
 
 header nav a {
@@ -71,7 +78,7 @@ main {
     text-align: center;
     border-radius: 10px;
     width: 200px;
-    margin: 0.5rem; 
+    margin: 0.5rem;
 }
 
 .project img {
@@ -117,43 +124,40 @@ footer .social-media a:hover {
 }
 
 /* RESPONSIVE DESIGN */
-
 @media (max-width: 768px) {
-    .projects {
-        flex-direction: column;
-        align-items: center;
+    /* Hamburger Menu */
+    .menu-icon {
+        display: block; /* Mobilde hamburger menüsünü göster */
     }
 
-    .project {
-        width: 90%; 
-        max-width: 400px;
-    }
-}
-
-@media (max-width: 480px) {
-    header .menu-toggle {
-        display: block;
-    }
-
+    /* Navbar başlangıçta gizli */
     .navbar {
-        display: none;
+        display: none; /* Mobilde başlangıçta menü gizli */
         flex-direction: column;
         align-items: center;
+        width: 100%; /* Menü genişliğini ayarlama */
+        position: absolute; /* Menüyü header içinde konumlandırma */
+        top: 60px; /* Header'dan aşağıya konumlandırma */
+        background-color: #48a999; /* Menü arka plan rengi */
+        z-index: 1; /* Üstte görünmesi için */
     }
 
-    .navbar.active {
-        display: flex;
+    /* Checkbox işaretliyse (menu-toggle checked) menüyü göster */
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex; /* Menüyü göster */
     }
 
     header nav a {
-        display: block;
-        margin: 10px 0; 
+        display: block; /* Mobilde menü öğeleri blok olarak göster */
+        margin: 10px 0;
         width: 100%;
+        text-align: center;
     }
 
     footer .social-media a {
         display: block;
-        margin: 10px 0; 
+        margin: 10px 0;
         width: 100%;
+        text-align: center;
     }
 }
