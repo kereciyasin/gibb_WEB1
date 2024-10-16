@@ -17,6 +17,19 @@ header {
     text-align: center;
     color: white;
     margin-top: 10px;
+    position: relative;
+}
+
+header .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
 }
 
 header nav {
@@ -118,6 +131,20 @@ footer .social-media a:hover {
 }
 
 @media (max-width: 480px) {
+    header .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
     header nav a {
         display: block;
         margin: 10px 0; 
