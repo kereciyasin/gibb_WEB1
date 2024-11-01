@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jetzt anmelden!</title>
+  </head>
+  <body>
+    <h1>Bitte füllen Sie das Formular vollständig aus..</h1>
+    <hr />
+    <form action="">
+      <h4>Ihr Kontoinformationen</h4>
+      <p>
+        Benutzername:
+        <input
+          name="username"
+          required
+          type="text"
+          placeholder="Benutzername eingeben.."
+        />
+      </p>
+      <p>
+        E-Mail:
+        <input
+          name="eposta"
+          required
+          type="email"
+          placeholder="E-Mail eingeben.."
+        />
+      </p>
+      <p>
+        Passwort:
+        <input
+          name="password"
+          readonly
+          type="password"
+          placeholder="Passwort eingeben.."
+        />
+      </p>
+
+      <h4>Persönliche Informationen</h4>
+      <p>Vorname: <input name="name" required type="text" /></p>
+      <p>Nachname: <input name="surname" required type="text" /></p>
+      <p>
+        Stadt:
+        <select name="city">
+          <option value="">Bitte auswählen</option>
+          <option value="">Ankara</option>
+          <option value="">Kirsehir</option>
+        </select>
+      </p>
+      <p>
+        Geschlecht: <input type="radio" />Männlich
+        <input type="radio" />Weiblich
+      </p>
+      <p>
+        Hobbys: <input type="checkbox" />Film <input type="checkbox" />Reisen
+        <input type="checkbox" />Sport <input type="checkbox" />Bücher
+      </p>
+      <input type="submit" value="Speichern" />
+    </form>
+  </body>
+</html>
