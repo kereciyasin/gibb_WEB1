@@ -1,0 +1,82 @@
+/* Genel Stiller */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  min-height: 100vh; /* Sayfanın en az viewport yüksekliğinde olması için */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Stilleri */
+header {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Main İçeriği */
+main {
+  padding: 2em;
+  flex-grow: 1; /* Main içerik alanının genişlemesine izin ver */
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+/* Resim ve Başlık Stilleri */
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Liste Stilleri */
+ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+/* Bağlantılar */
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Aside Bölümü */
+aside {
+  background-color: #f0f0f0;
+  padding: 1em;
+  margin: 2em 0;
+  border-left: 3px solid #4caf50;
+}
+
+/* Aside İçindeki Liste Stilleri */
+aside ul {
+  list-style-type: none; /* Kendi liste stilini uygula */
+  padding: 0;
+}
+
+aside ul li {
+  margin-bottom: 0.5em; /* Liste elemanları arasında boşluk bırak */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #4caf50;
+  color: #fff;
+}
