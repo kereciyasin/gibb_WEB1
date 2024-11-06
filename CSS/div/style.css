@@ -1,15 +1,18 @@
 #container {
+  /* background-color: chartreuse; */
   width: 1140px;
 }
 #blog-post-container {
   width: 75%;
-  background-color: red;
+  /* background-color: red; */
+  float: left;
 }
 
 #others-post {
   width: 25%;
-  background-color: bisque;
+  /* background-color: bisque; */
+  float: left;
 }
 #author-box {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
