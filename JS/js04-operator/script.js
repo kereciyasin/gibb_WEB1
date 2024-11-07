@@ -33,10 +33,29 @@
 
 // if else
 
-let isLoggedin = true;
+// let isLoggedin = true;
 
-if (isLoggedin) {
-  console.log("User is logged in");
+// if (isLoggedin) {
+//   console.log("User is logged in");
+// } else {
+//   console.log("User is not logged in");
+// }
+
+let username = "admin";
+let password = "admin1234";
+// let isLoggedin = username === "admin" && password === "admin1234";
+// if (isLoggedin) {
+//   console.log("User is logged in");
+// } else {
+//   console.log("User is not logged in");
+// }
+
+if (username === "admin") {
+  if (password === "admin1234") {
+    console.log("User is logged in");
+  } else {
+    console.log("Password is incorrect");
+  }
 } else {
-  console.log("User is not logged in");
+  console.log("Username is incorrect");
 }
