@@ -1,10 +1,2 @@
-function changeTitle() {
-  document.querySelector('h1').textContent = "Neuer Titel";
-}
-
-function changeButton() {
-  document.querySelector('button').textContent = "Geklickt!";
-}
-
-document.querySelector('button').addEventListener('click', changeTitle);
-document.querySelector('button').addEventListener('click', changeButton);
+const element = document.getElementById("message");
+console.log(element); // <div id="message">Merhaba, dünya!</div> öğesini döndürecek
