@@ -30,3 +30,44 @@
 // vehicles[1] = "Roller"
 // vehicles.push("Skateboard")
 // console.log(vehicles);
+
+
+// function yazdir(){
+//   console.log("Yasin");
+// }
+// yazdir();
+// yazdir();
+
+//parametre alan methodlar
+
+// function yazdir(isim, soyisim){
+//   console.log(isim + " " + soyisim);
+// }
+// yazdir("Yasin", 5)
+
+// function cube(sayi)
+// {
+//   console.log(sayi*sayi*sayi);
+// }
+// cube(3);
+
+// let yas = Number(promt("Yasiniz;"))
+// kontrolEt(yas)
+
+// function kontrolEt(yas){
+// if(yas>18){
+//   console.log("Ehliyet alabilirsiniz");
+// }
+// else{
+//   console.log("Ehliyet alamazsiniz");
+// }
+// }
+
+function cube(sayi)
+{
+  let sonuc = sayi*sayi*sayi
+  return sonuc;
+}
+let donenDeger = cube(5)
+console.log(donenDeger);
+
