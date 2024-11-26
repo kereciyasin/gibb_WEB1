@@ -63,11 +63,16 @@
 // }
 // }
 
-function cube(sayi)
-{
-  let sonuc = sayi*sayi*sayi
-  return sonuc;
-}
-let donenDeger = cube(5)
-console.log(donenDeger);
+// function cube(sayi)
+// {
+//   let sonuc = sayi*sayi*sayi
+//   return sonuc;
+// }
+// let donenDeger = cube(5)
+// console.log(donenDeger);
 
+// function greet(names){
+//   console.log("Hallo" + names + "!");
+// }
+
+// names();
