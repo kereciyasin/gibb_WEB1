@@ -1,12 +1,18 @@
-// changeTitle fonksiyonu, başlık (h1) metnini değiştirecek
+// h1 başlığının metnini değiştiren fonksiyon
 function changeTitle() {
-  const title = document.getElementById("h1");
-  title.textContent = "Yeni Title"; // Başlık metnini değiştiriyoruz
+  const h1 = document.querySelector('h1'); // h1 etiketi seçilir
+  h1.textContent = 'Yeni Başlık'; // Başlık metni 'Yeni Başlık' olarak değiştirilir
 }
 
-// changeButton fonksiyonu, buton metnini değiştirecek
+// Butonun metnini değiştiren fonksiyon
 function changeButton() {
-  const button = document.getElementById("buttonId");
-  button.textContent = "Gelickt!"; // Buton metnini değiştiriyoruz
-  changeTitle();
+  const button = document.querySelector('button'); // Button etiketi seçilir
+  button.textContent = 'Tıklandı!'; // Buton metni 'Tıklandı!' olarak değiştirilir
 }
+
+// Butona tıklama olay dinleyicisi eklenir
+const button = document.querySelector('button');
+button.addEventListener('click', function() {
+  changeTitle();  // changeTitle fonksiyonu çağrılır
+  changeButton(); // changeButton fonksiyonu çağrılır
+});
