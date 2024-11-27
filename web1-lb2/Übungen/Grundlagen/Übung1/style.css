@@ -1,0 +1,79 @@
+/* Genel stil */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #9fa8da;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 36px;
+  color: white;
+}
+
+input[type="text"], button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+li span {
+  font-size: 18px;
+}
+
+li .date {
+  font-size: 12px;
+  color: #888;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+label {
+  font-size: 14px;
+  color: white;
+}
+
+button:hover {
+  background-color: #607d8b;
+}

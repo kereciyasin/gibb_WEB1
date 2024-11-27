@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <h1 id="titleFirst">Hallo Welt!</h1>
-    <button onclick="buttonClick()" id="buttonFirst">Click me!</button>
-  </body>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basit Yapılacaklar Listesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple ToDo App</h1>
+    <input type="text" id="todoInput" placeholder="Yeni görev ekleyin...">
+    <button id="addButton">Ekle</button>
+    <label for="toggleCompleted">Abone olunan görevleri gizle</label>
+    <input type="checkbox" id="toggleCompleted">
+    <ul id="todoList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
